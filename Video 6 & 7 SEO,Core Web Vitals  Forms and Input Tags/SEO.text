@@ -1,0 +1,21 @@
+In vedio no. 6
+we learn about how to make a good website to rendered at google firstly.
+means make those type of website which are good at all website scale.
+
+SEO stands for - Search Engion Optimization
+we can use lighthouse report to check our website scalability.
+
+Core Web Vitals - 
+basically core web vitals are scale where search Engion compare two website of same content to which website is best to rang firstly.
+
+CLS -
+CLS is a type of core web vital, stands for Cumilative Layout Shift.
+means how you Layout is shift during page loading.
+
+LCP - 
+LCP is a type of core web vital, stands for Largest Contentful Paint.
+mens how  much time take to load largest content on your website.
+
+FID - 
+FID is a type of core web vital, stands for First Input Delay.
+mens how  much time take to process Input from website.

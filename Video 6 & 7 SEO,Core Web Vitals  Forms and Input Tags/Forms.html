@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- we have to always use meta description for our website for SEO -->
+    <meta name="description" content="This website is form for travels.">
+    <title>Forms - Let's lern it</title>
+</head>
+
+<body>
+    <h1>Travel Form </h1>
+    <form action="post">
+        <div>
+            <label for="username">Traveler name*</label>
+            <br>
+            <input type="text" id="username" name="username" placeholder="Enter your name.." required>
+        </div>
+        <div>
+            <label for="Phone">Phone*</label>
+            <br>
+            <input type="text" id="Phone" name="Phone" placeholder="Enter your Phone.." required>
+        </div>
+        <div>
+            <label for="">Preferred method of contact*</label>
+            <br>
+            <label for="Phone">Phone</label>
+            <input type="radio" id="Phone" name="contact" value="Phone">
+            <br>
+            <label for="Email">Email</label>
+            <input type="radio" id="Email" name="contact" value="Email">
+            <br>
+            <label for="Text">Text</label>
+            <input type="radio" id="Text" name="contact" value="Text">            
+        </div>
+        <div>
+            <label for="bday">Birth date*</label>
+            <input type="date" id="bday" required>
+        </div>
+        <div>
+            <label for="Address">Address*</label>
+            <input type="text" id="Address" name="Address" required>
+        </div>
+    </form>
+    <h1>This is enough to understand how form tag works. We can learn more input types, methods and all from <a href="https://www.codewithharry.com/tutorial/html-input-types/">codewithharry</a> website.</h1>
+</body>
+
+</html>

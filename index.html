@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors - CSS</title>
+    <style>
+        /* Element selectors - which select complete any elements */
+        /*Example*/
+        div {
+            background-color: blueviolet;
+        }
+        
+        /* Class Selectors - which selects only specific classes elements */
+        /*Example*/
+        .red{
+            background-color:  red;
+        }
+
+        /* Id Selectors - Which selects a particular Id class */
+        /* Example */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selectors - Which selects child elements of any elements. only if selected element are first hand child.
+        Example - */
+        div > p{
+            color: rgb(5, 170, 224);
+            background-color: pink;
+        }
+
+        /* Descendant Selectors - Which selects child elements of any elements. it's select all selected childs wheather child is first hand or second hand :)
+        Example - */
+        div p{
+            color: black;
+            background-color: brown;
+        }
+
+        /* Universal Selector - which is select all page 
+        Example - */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selectors - It is selects a particuler ocasional or situation of tags.
+        Example - */
+        a:visited{
+            color: brown;
+        }
+        a:link{
+            color: blue;
+        }
+        a:active{
+            background-color: aqua;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        a:first-child{
+            background-color: rgb(241, 141, 18);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        <p>I am a div</p>
+        <article>
+
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+</body>
+
+</html>
