@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties - CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 4px solid gray;
+            display: inline-block;
+            margin: 30px;
+            padding: 40px;
+            width: 344px;
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+            color: brown;
+        }
+        span{
+            margin: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a nice box</div>
+    <br>
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+</html>
+<!-- 
+My notes:
+
+Display property
+You can set the display property to inline/block of any item
+Inline elements don’t give padding and margin at top. But if you still want to give padding and margin at top and also want to use the elements as inline, then you should change the display property to inline-block
+inline-block: an intermediate between inline and block element
+You can’t set the width of inline elements. Their width depends on content and padding and margin
+display: none; this will remove the element from existence and its space will be occupied
+visibility: none; this will remove the element but its space will remain there.
+To center the content, you need to set the display property to flex
+display: inline-flex; intermediate between inline and flex -->
