@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow - CSS</title>
+    <style>
+        .box{
+            width: 30vw;
+            height: 20vh;
+            border: 2px solid black;
+            overflow: auto;
+            text-overflow: ellipsis;
+        }
+        .ellipsis{
+            width: 40vw;
+            height: 10vh;
+            border: 2px solid red;
+            text-overflow: ellipsis;
+            /* /* overflow: auto; */
+            overflow-x: hidden;
+            overflow-y: scroll; 
+            /*overflow: auto hidden;
+             white-space: nowrap;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tenetur alias unde magnam ipsum saepe voluptatem eius aliquid nostrum cum atque laudantium ducimus error expedita ipsam, in at. Aut porro sequi veniam. Non, earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempore magni officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod fuga laborum illum minima dignissimos alias, dolorum, ratione voluptatum enim deserunt repellendus quis, numquam quam.
+    </div>
+    <div class="ellipsis">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tenetur alias unde magnam ipsum saepe voluptatem eius aliquid nostrum cum atque laudantium ducimus error expedita ipsam, in at. Aut porro sequi veniam. Non, earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempore magni officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod fuga laborum illum minima dignissimos alias, dolorum, ratione voluptatum enim deserunt repellendus quis, numquam quam.
+    </div>
+</body>
+</html>
