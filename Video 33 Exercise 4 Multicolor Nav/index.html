@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Nav Bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+        /*Blue Theme*/
+        
+        :root{
+            --navcolor:rgba(132, 38, 220, 0.842);
+            --navtextcolor: #dad1d4;
+            --bodycolor:rgba(133, 63, 199, 0.774);
+            --h1color: rgb(175, 40, 180);
+        }
+
+        /* Red Theme */ 
+
+        /* :root{
+            --navcolor:rgba(228, 55, 61, 0.842);
+            --navtextcolor: #dad1d4;
+            --bodycolor:rgba(196, 75, 79, 0.802);
+            --h1color: rgb(136, 63, 63);
+        } */
+
+        /* Darktheme */
+
+        /* :root{
+            --navcolor:rgba(26, 25, 28, 0.842);
+            --navtextcolor: #dad1d4;
+            --bodycolor:rgba(44, 40, 48, 0.687);
+            --h1color: rgb(206, 198, 207);
+        } */
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-color: var(--bodycolor);
+        }
+
+        .nav{
+           background-color: var(--navcolor);
+           padding: 15px;
+        }
+         ul{
+            display: flex;
+        }
+        ul li{
+            
+            padding: 14px;
+            list-style: none;
+            font-size: large;
+            font-weight: bold;
+            
+        }
+        ul li a{
+            text-decoration: none;
+            color: var(--navtextcolor);
+        }
+        h1{
+            color: var(--h1color);
+            padding: 20px ;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Multicolor Nav Bar </h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
