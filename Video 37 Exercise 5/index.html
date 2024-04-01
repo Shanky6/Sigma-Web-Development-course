@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            border: 2px;
+            background-color: rgb(153, 140, 235);
+            height: 40px;
+
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+        nav ul a li {
+            padding: 10px;
+            font-weight: bold;
+            padding-left: 30px;
+        }
+        nav ul a li:hover{
+            color: white;
+        }
+        
+
+        main {
+            background-color: #7B58A7;
+            color: white;
+            height: 600px;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            border: 2px;
+            background-color: rgb(48, 36, 113);
+            height: 350px;
+            text-align: center;
+            padding: 50px;
+
+        }
+
+        .box-1 {
+            background-color: #A86E91;
+            padding: 8px;
+            width: 350px;
+            height: 350px;
+            margin: 0 50px;
+            display: inline-block;
+            color:  white;
+        }
+        .box-1:hover{
+            color: #010101;
+        }
+        
+        .box-2 {
+            background-color: #6EA885;
+            padding: 8px;
+            width: 350px;
+            height: 350px;
+            margin: 0 50px;
+            display: inline-block;
+            color:  white;            
+        }
+        .box-2:hover{
+            color:#010101;
+        }
+
+        .content {
+            padding: 30px;
+            width: 200px;
+            margin-left: 450px;
+        }
+        .content:hover{
+            color: #84A758;
+        }
+
+        .element {
+            border: 2 px;
+            height: 40px;
+            width: 40px;
+            background-color: orange;
+            border-radius: 200px;
+            position: fixed;
+            bottom: 15px;
+            right: 20px;
+            text-align: center;
+            padding: 10px;
+            display: inline-block;
+            color: rgb(9, 84, 28);
+            font-weight: bold;
+        }
+        .element:hover{
+            background-color:#500a34;
+        }
+
+        footer div {
+
+            height: 80px;
+            background-color: bisque;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/">
+                    <li>About</li>
+                </a>
+                <a href="/">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero deserunt voluptatem
+                odio, aut dolorem optio eligendi doloribus quo at hic.</div>
+            <div class="box-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate inventore porro
+                quibusdam omnis magni in fugit molestias eveniet rem aspernatur!</div>
+        </div>
+        <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nulla eaque quisquam inatque autem.
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+        <div class="element">Help Box</div>
+    </main>
+    <footer>
+        <div>CopyRight@ | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, suscipit!
+        <br> Thank You!
+        </div>
+    </footer>
+</body>
+
+</html>
