@@ -1,4 +1,5 @@
-/* Create a business name generator by combining list of adjectives and shop name and another word
+/* Create a business name generator by combining list of adjectives and shop name and another word.
+Without using Array.
 
 
 Adjectives:
@@ -16,12 +17,10 @@ Bros
 Limited
 Hub
 
-
-
 */
 
 
-var y = confirm("Do you want to name for your company.")
+var y = confirm("Do you want to name for your business.")
 
 
 if(y == true){
