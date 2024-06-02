@@ -1,3 +1,7 @@
+var p = prompt("Enter any Number :")
+let a = 5
+
+//Method - 1
 function factorial(number) {
     
     let fact = 1 ;
@@ -9,6 +13,8 @@ function factorial(number) {
     return fact;
 }
 
+
+//Method - 2
 function Factorial_(number) {
     let arr = Array.from(Array(number + 1).keys());
 
@@ -16,6 +22,9 @@ function Factorial_(number) {
     return c;
 }
 
-console.log(factorial(6));
 
-console.log(Factorial_(6));
+
+
+console.log(factorial(p));
+
+console.log(Factorial_(p));
