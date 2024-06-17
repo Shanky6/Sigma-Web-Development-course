@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Boxes</title>
+
+    <!-- Given 5 boxes, Assign a random color and a random background to each box using DOM concepts -->
+</head>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .box {
+        border: 2px solid black;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+    </div>
+
+</body>
+<script>
+    console.log("Script.js initializing")
+    // let boxes = document.getElementsByClassName("box")
+    let boxes = document.querySelector(".container").children;
+
+
+    function getRandomColor() {
+        let val1 = Math.ceil(0 + Math.random() * 255);
+        let val2 = Math.ceil(0 + Math.random() * 255);
+        let val3 = Math.ceil(0 + Math.random() * 255);
+        return `rgb(${val1}, ${val2}, ${val3})`
+    }
+    Array.from(boxes).forEach(e => {
+        e.style.backgroundColor = getRandomColor()
+        e.style.color = getRandomColor()
+    })
+</script>
+
+</html>
